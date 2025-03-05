@@ -28,7 +28,7 @@ body {
 
 .content > article {
     flex: 4;
-    min-height: 60vh;
+    min-height: auto; /* Allow dynamic height */
 }
 
 .content > aside {
@@ -49,7 +49,6 @@ header, footer, article, nav, aside {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    flex-direction: row;
     justify-content: center;
     gap: 10px;
 }
@@ -58,4 +57,40 @@ header, footer, article, nav, aside {
     width: 23%;
     border: 3px solid #000;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1 1 300px;
+    max-width: 320px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    background: white;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .text {
+    padding: 15px;
+}
+
+.card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
 }
