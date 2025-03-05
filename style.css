@@ -94,3 +94,22 @@ header, footer, article, nav, aside {
     width: 100%;
     cursor: pointer;
 }
+.media {
+    display: flex;
+    align-items: center;
+    
+    background: #F6F3EB;
+    padding: 1em;
+    margin: 10px;
+    border-radius: 3px;
+    max-width: 24em;
+  }
+  .media-object {
+    margin-right: 1em;
+  }
+  .media-body {
+    flex: 1;
+  }
+  .media-heading {
+    margin: 0 0 .5em;
+  }
